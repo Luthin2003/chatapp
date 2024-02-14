@@ -1,0 +1,76 @@
+.infoBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #2979FF;
+    border-radius: 6px 6px 0 0;
+    height: 60px;
+    width: 100%;
+}
+
+.leftInnerContainer {
+    flex: 0.5;
+    display: flex;
+    align-items: center;
+    margin-left: 5%;
+    color: #FFFFFF;
+}
+
+.leftInnerContainer h3 {
+    text-align: center;
+}
+
+.ml-10 {
+    margin-left: 10%;
+}
+
+.rightInnerContainer {
+    display: flex;
+    flex: 0.5;
+    justify-content: flex-end;
+    margin-right: 5%;
+}
+
+.onlineIcon {
+    margin-right: 3%;
+    font-size: .6rem;
+    color: rgb(10, 236, 10);
+}
+
+.roomIcon {
+    margin-right: 3%;
+    font-size: 1.5rem;
+}
+
+.exitButton {
+    color: #e5f0fc;
+    font-size: 1.8rem;
+    transition: all .2s ease-in-out;
+
+}
+
+.showUsers {
+    font-size: 1rem;
+    padding: 5px;
+    margin-right: 5%;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    background-color: #e5f0fc;
+}
+
+.fa-user-group {
+    color: #2979FF;
+}
+
+.exitButton:hover,
+.showUsers:hover {
+    transform: scale(1.15);
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .showUsers {
+        margin-right: 10%;
+    }
+}

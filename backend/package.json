@@ -1,0 +1,24 @@
+{
+  "name": "socket-io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server/server",
+    "server": "nodemon server/server",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "prebuild": "npm install",
+    "build": "cd ./client && npm install && npm run build"
+  },
+  "keywords": [],
+  "author": "Yaniv Weinshtein",
+  "license": "MIT",
+  "dependencies": {
+    "concurrently": "^7.2.2",
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "nodemon": "^3.0.3",
+    "socket.io": "^4.5.1"
+  }
+}

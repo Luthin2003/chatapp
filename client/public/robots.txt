@@ -1,0 +1,3 @@
+User-agent: *
+allow: * 
+Sitemap: https://chat-app-faoy.onrender.com/
